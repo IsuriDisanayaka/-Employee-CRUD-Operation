@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee</title>
+    <link href="asserts/css/bootstrap.css" rel="stylesheet">
+    <link href="asserts/style.css" rel="stylesheet">
+</head>
+<body>
+
+<main style="background:  #e8dbea; " id="customerSave">
+
+
+
+
+    <!--            title-->
+    <h1 class="text-center modal-title  " style="color: #040b3b;position: absolute;
+right: 157px;  font-size: 65px"> Employee</h1>
+
+
+    <!--      save grid-->
+    <div class="d-block" style="max-width: 700px; height:521px;
+position: absolute;top:100px; left:41px; width: 586px;background-color: rgba(216, 200, 200, 0.51);">
+        <form>
+
+
+            <div class="form-group w-50 " style="padding-left:40px;
+            color: #100f0f;font-weight:bold;padding-top: 90px; " >
+                <label for ="txtCustomerID">Customer ID</label>
+                <input type class="form-control" id="txtCustomerID" required type="text">
+                <span class="control-error" id="lblcusid"></span>
+            </div>
+
+            <div class="form-group w-50 " style="padding-left: 40px;
+             color: #151414; font-weight: bold; padding-top: 15px;">
+                <label for="txtCustomerName">Customer Name</label>
+                <input class="form-control" id="txtCustomerName" type="text">
+                <span class="control-error" id="lblcusname"></span>
+            </div>
+            <div class="form-group w-50 " style="padding-left: 40px;
+             color:#111111;font-weight:bold;padding-top: 15px;">
+                <label for="txtCustomerAddress">Customer Address</label>
+                <input class="form-control" id="txtCustomerAddress" type="text">
+                <span class="control-error" id="lblcusaddress"></span>
+            </div>
+
+
+            <div class="form-group w-50 " style="padding-left: 40px;
+            color: #0c0c0c; font-weight: bold;padding-top: 15px;" >
+                <label for="txtCustomerContact" >Customer Phone Number</label>
+                <input type="tel" class="form-control" id="txtCustomerContact" aria-describedby="phoneHelp">
+
+                <span class="control-error" id="lblcuscontact"></span>
+            </div>
+
+
+
+
+            <!--search-->
+            <div class="form-group  " style="left: 250px;position: absolute;
+            color:#dccece;font-weight:bold;top:40px;width: 200px;" >
+                <input type="text" class="form-control" id="InputSCID">
+                <button class="btn " type="button" style="width: 166px;
+            position: absolute; width: 100px;background: #154040; position: absolute; left:215px;color: white;
+             top:0px;" id="btnSerachCust">Search</button>
+
+            </div>
+
+
+
+            <!--save.dalete/update-->
+
+
+            <button class="btn btn-success" type="button" style="width: 100px;
+            position: absolute; width: 140px; position: absolute; left: 30px; top:453px;" id="btnSaveCust">Save</button>
+            <button class="btn btn-danger" type="button" style="width: 100px;
+            position: absolute; width: 100px; position: absolute; left: 204px; top:453px;" id="btnDeleteCust">Delete</button>
+
+
+            <button class="btn " type="button" style="width: 100px;
+            position: absolute; width: 100px;background: orange; position: absolute; left:344px; top:453px;" id="btnUpdate">Update</button>
+
+
+
+            <button class="btn " type="button" style="width: 100px;
+            position: absolute; width: 100px; position: absolute;
+            background: #44ff00; color: #1c0e0e; left: 465px;top:453px;" id="btnclearCust">Clear</button>
+
+        </form>
+    </div>
+
+
+    <table class="table table-bordered table-hover w-50 "  style="position: absolute;
+    color: #0a0a0a;  left: 675px; top: 150px;
+background: #a05353; ">
+
+        <thead style="background:#929abf63 ">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Contact</th>
+
+        </tr>
+        </thead>
+        <tbody id="tblCustomer">
+
+        </tbody>
+    </table>
+
+</main>
+<script src="asserts/js/bootstrap.js"></script>
+<script src="asserts/js/jquery-3.5.1.min.js"></script>
+</body>
+</html>
